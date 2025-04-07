@@ -2,7 +2,7 @@
 
 REPOS = Login-data Chat-data Chat_BackEnd FrontEnd Login_BackEnd
 
-BASE_URL = https://github.com/chamanismossl
+BASE_URL = git@github.com:chamanismossl
 
 build:
 	docker-compose up --build
