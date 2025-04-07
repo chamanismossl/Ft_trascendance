@@ -1,0 +1,44 @@
+version: "3.8"
+
+services:
+  chat:
+    build: ./services/Chat_BackEnd
+    ports:
+      - 5002:5002
+    networks:
+      - transcendence
+    volumes:
+      - ./services/Chat-data:/node
+
+  login:
+    build: ./services/Login_BackEnd
+    ports:
+      - 5001:5001
+    networks:
+      - transcendence
+    volumes:
+      - ./services/Login-data:/node
+
+  front:
+    build: ./services/FrontEnd/FrontEnd
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./services/FrontEnd/FrontEnd:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - PRODUCTION=true
+      - NAME=FrontEnd
+    container_name: FrontEnd
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    command: sh -c "chmod -R 777 /app/node_modules && npm start"
+    depends_on:
+      - chat
+      - login
+  
+networks:
+  transcendence:
+    driver: bridge
