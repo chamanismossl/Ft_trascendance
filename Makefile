@@ -1,6 +1,6 @@
 .PHONY: build down logs clone pull
 
-REPOS = Login-data Chat-data Chat_BackEnd FrontEnd Login_BackEnd
+REPOS = Login-data Chat-data Chat_BackEnd FrontEnd Login_BackEnd Notification_BackEnd
 
 BASE_URL = git@github.com:chamanismossl
 

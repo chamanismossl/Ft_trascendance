@@ -38,7 +38,17 @@ services:
     depends_on:
       - chat
       - login
-  
+
+  notifications:
+    build: ./services/Notification_BackEnd
+    ports:
+      - "3001:3001"
+      - "3002:3002"
+    volumes:
+      - ./services/Notification_BackEnd/data:/app/data
+    environment:
+      - NODE_ENV=development
+
 networks:
   transcendence:
     driver: bridge
