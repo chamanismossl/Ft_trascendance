@@ -49,6 +49,15 @@ services:
     environment:
       - NODE_ENV=development
 
+  users:
+    build: ./services/User_BackEnd
+    ports:
+      - "5500:5500"
+    volumes:
+      - ./services/User_BackEnd/data:/app/data
+    environment:
+      - NODE_ENV=development
+
 networks:
   transcendence:
     driver: bridge
