@@ -52,7 +52,7 @@ services:
   users:
     build: ./services/User_BackEnd
     ports:
-      - "5500:5500"
+      - "3003:3003"
     volumes:
       - ./services/User_BackEnd/data:/app/data
     environment:
