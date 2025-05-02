@@ -44,6 +44,8 @@ services:
     ports:
       - "3001:3001"
       - "3002:3002"
+    networks:
+      - transcendence
     volumes:
       - ./services/Notification_BackEnd/data:/app/data
     environment:
@@ -53,6 +55,8 @@ services:
     build: ./services/User_BackEnd
     ports:
       - "3003:3003"
+    networks:
+      - transcendence
     volumes:
       - ./services/User_BackEnd/data:/app/data
       - ./services/User_BackEnd/uploads:/app/uploads
