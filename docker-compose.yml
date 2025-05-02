@@ -55,6 +55,7 @@ services:
       - "3003:3003"
     volumes:
       - ./services/User_BackEnd/data:/app/data
+      - ./services/User_BackEnd/uploads:/app/uploads
     environment:
       - NODE_ENV=development
 
