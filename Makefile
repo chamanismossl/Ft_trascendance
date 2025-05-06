@@ -1,6 +1,6 @@
 .PHONY: build down logs clone pull
 
-REPOS = Login-data Chat-data Chat_BackEnd FrontEnd Login_BackEnd Notification_BackEnd User_BackEnd
+REPOS = Chat_BackEnd FrontEnd Login_BackEnd Notification_BackEnd User_BackEnd
 
 BASE_URL = git@github.com:chamanismossl
 
@@ -20,12 +20,18 @@ clone:
 	@mkdir -p services
 	@for repo in $(REPOS); do \
 		if [ ! -d "services/$$repo" ]; then \
-			echo "Clonando $$repo..."; \
-			git clone $(BASE_URL)/$$repo.git services/$$repo; \
+			case $$repo in \
+				Chat_BackEnd) BRANCH=dev ;; \
+				Login_BackEnd) BRANCH=dev ;; \
+				*) BRANCH=main ;; \
+			esac; \
+			echo "Clonando $$repo desde rama $$BRANCH..."; \
+			git clone --branch $$BRANCH --single-branch $(BASE_URL)/$$repo.git services/$$repo; \
 		else \
 			echo "$$repo ya existe, omitiendo..."; \
 		fi \
 	done
+
 
 pull:
 	@for repo in $(REPOS); do \

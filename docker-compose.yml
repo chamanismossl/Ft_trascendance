@@ -8,7 +8,8 @@ services:
     networks:
       - transcendence
     volumes:
-      - ./services/Chat-data:/node
+      - ./services/Chat_BackEnd:/node
+    container_name: chat
 
   login:
     build: ./services/Login_BackEnd
@@ -17,7 +18,8 @@ services:
     networks:
       - transcendence
     volumes:
-      - ./services/Login-data:/node
+      - ./services/Login_BackEnd:/node
+    container_name: login
 
   front:
     build: ./services/FrontEnd/FrontEnd
@@ -50,6 +52,7 @@ services:
       - ./services/Notification_BackEnd/data:/app/data
     environment:
       - NODE_ENV=development
+    container_name: notifications
 
   users:
     build: ./services/User_BackEnd
@@ -62,6 +65,7 @@ services:
       - ./services/User_BackEnd/uploads:/app/uploads
     environment:
       - NODE_ENV=development
+    container_name: users
 
 networks:
   transcendence:
