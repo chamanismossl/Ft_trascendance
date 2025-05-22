@@ -27,7 +27,6 @@ services:
       - "3000:3000"
     volumes:
       - ./services/FrontEnd/FrontEnd:/app
-      - /app/node_modules
     environment:
       - CHOKIDAR_USEPOLLING=true
       - PRODUCTION=true
