@@ -1,4 +1,4 @@
-.PHONY: build down logs clone pull
+.PHONY: build down logs clone pull clean-db
 
 REPOS = Chat_BackEnd FrontEnd Login_BackEnd Notification_BackEnd User_BackEnd
 
@@ -42,3 +42,6 @@ pull:
 			echo "$$repo no existe, ejecuta 'make clone' primero."; \
 		fi \
 	done
+
+clean-db:
+	find . -type f -name '*.db' -exec rm -f {} +
