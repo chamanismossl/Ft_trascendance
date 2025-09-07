@@ -66,6 +66,18 @@ services:
       - NODE_ENV=development
     container_name: users
 
+  matches:
+    build: ./services/Match_BackEnd
+    ports:
+      - "3004:3004"
+    networks:
+      - transcendence
+    volumes:
+      - ./services/Match_BackEnd/data:/app/data
+    environment:
+      - NODE_ENV=development
+    container_name: matches
+
 networks:
   transcendence:
     driver: bridge
