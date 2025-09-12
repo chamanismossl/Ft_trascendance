@@ -35,7 +35,7 @@ services:
     restart: unless-stopped
     stdin_open: true
     tty: true
-    command: sh -c "chmod -R 777 /app/node_modules && npm start"
+    command: sh -c "npm start"
     depends_on:
       - chat
       - login
