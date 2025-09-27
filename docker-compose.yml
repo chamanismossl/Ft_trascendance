@@ -27,6 +27,8 @@ services:
       target: ${BUILD_TARGET:-dev}
     ports:
       - "${FRONT_PORT:-3000}:${FRONT_PORT:-3000}"
+    volumes:
+      - /app/node_modules
     container_name: FrontEnd
     stdin_open: true
     tty: true

@@ -8,7 +8,7 @@ dev:
 	BUILD_TARGET=dev FRONT_PORT=3000 DEV_VOLUME=./services/FrontEnd/FrontEnd docker-compose up --build
 
 prod:
-	BUILD_TARGET=prod FRONT_PORT=80 docker-compose up --build --detach
+	BUILD_TARGET=prod FRONT_PORT=3000 docker-compose up --build --detach
 
 down:
 	docker-compose down
