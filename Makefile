@@ -4,14 +4,17 @@ REPOS = Chat_BackEnd FrontEnd Login_BackEnd Notification_BackEnd User_BackEnd Ma
 
 BASE_URL = git@github.com:chamanismossl
 
-build:
-	docker-compose up --build
+dev:
+	BUILD_TARGET=dev FRONT_PORT=3000 DEV_VOLUME=./services/FrontEnd/FrontEnd docker-compose up --build
+
+prod:
+	BUILD_TARGET=prod FRONT_PORT=3000 docker-compose up --build --detach
 
 down:
 	docker-compose down
 
 logs:
-	docker-compose logs
+	docker-compose logs -f
 	
 rm:
 	rm -rf services
