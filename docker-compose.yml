@@ -23,20 +23,12 @@ services:
 
   front:
     build:
-      context: ./services/FrontEnd/FrontEnd
-      target: ${BUILD_TARGET:-dev}
+      context: ./services/Vanilla_FrontEnd
     ports:
       - "${FRONT_PORT:-3000}:${FRONT_PORT:-3000}"
     volumes:
-      - ./services/FrontEnd/FrontEnd:/app
-      - /app/node_modules
+      - ./services/Vanilla_FrontEnd:/app
     container_name: FrontEnd
-    stdin_open: true
-    tty: true
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-      - WATCHPACK_POLLING=true
-      - ESLINT_NO_CACHE=true
     depends_on:
       - chat
       - login
