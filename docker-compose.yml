@@ -9,6 +9,7 @@ services:
       - transcendence
     volumes:
       - ./services/Chat_BackEnd:/node
+      - chat_node_modules:/node/node_modules
     container_name: chat
 
   login:
@@ -19,6 +20,7 @@ services:
       - transcendence
     volumes:
       - ./services/Login_BackEnd:/node
+      - login_node_modules:/node/node_modules
     container_name: login
 
   front:
@@ -28,6 +30,7 @@ services:
       - "${FRONT_PORT:-3000}:${FRONT_PORT:-3000}"
     volumes:
       - ./services/Vanilla_FrontEnd:/app
+      - front_node_modules:/app/node_modules
     container_name: FrontEnd
     depends_on:
       - chat
@@ -42,6 +45,7 @@ services:
       - transcendence
     volumes:
       - ./services/Notification_BackEnd/data:/app/data
+      - notifications_node_modules:/app/node_modules
     environment:
       - NODE_ENV=development
     container_name: notifications
@@ -55,6 +59,7 @@ services:
     volumes:
       - ./services/User_BackEnd/data:/app/data
       - ./services/User_BackEnd/uploads:/app/uploads
+      - users_node_modules:/app/node_modules
     environment:
       - NODE_ENV=development
     container_name: users
@@ -74,3 +79,10 @@ services:
 networks:
   transcendence:
     driver: bridge
+
+volumes:
+  chat_node_modules:
+  login_node_modules:
+  front_node_modules:
+  notifications_node_modules:
+  users_node_modules:

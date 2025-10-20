@@ -4,11 +4,34 @@ REPOS = Chat_BackEnd Vanilla_FrontEnd Login_BackEnd Notification_BackEnd User_Ba
 
 BASE_URL = git@github.com:chamanismossl
 
+# Detect architecture and set DOCKER_DEFAULT_PLATFORM so builds target the host arch
+UNAME_S := $(shell uname -s)
+UNAME_M := $(shell uname -m)
+
+# Determine the platform based on OS and architecture
+ifeq ($(UNAME_S),Darwin)
+  ifeq ($(UNAME_M),arm64)
+    DOCKER_PLATFORM := linux/arm64
+  else
+    DOCKER_PLATFORM := linux/amd64
+  endif
+else ifeq ($(UNAME_S),Linux)
+  ifeq ($(UNAME_M),x86_64)
+    DOCKER_PLATFORM := linux/amd64
+  else ifeq ($(UNAME_M),aarch64)
+    DOCKER_PLATFORM := linux/arm64
+  else
+    DOCKER_PLATFORM := 
+  endif
+else
+  DOCKER_PLATFORM :=
+endif
+
 dev:
-	BUILD_TARGET=dev FRONT_PORT=3000 DEV_VOLUME=./services/FrontEnd/FrontEnd docker-compose up --build
+	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) BUILD_TARGET=dev FRONT_PORT=3000 DEV_VOLUME=./services/Vanilla_FrontEnd docker-compose up --build
 
 prod:
-	BUILD_TARGET=prod FRONT_PORT=3000 docker-compose up --build --detach
+	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) BUILD_TARGET=prod FRONT_PORT=3000 docker-compose up --build --detach
 
 down:
 	docker-compose down
