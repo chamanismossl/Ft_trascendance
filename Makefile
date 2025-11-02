@@ -1,4 +1,4 @@
-.PHONY: build down logs clone pull clean-db
+.PHONY: all build up dev prod down logs restart clean clean-db clean-volumes clone pull status help
 
 REPOS = Chat_BackEnd Vanilla_FrontEnd Login_BackEnd Notification_BackEnd User_BackEnd Match_BackEnd
 
@@ -27,22 +27,64 @@ else
   DOCKER_PLATFORM :=
 endif
 
+# Default target
+all: dev
+
+# Build all services
+build:
+	@echo "🔨 Building all services..."
+	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) docker-compose build
+
+# Start all services in development mode with auto-reload
 dev:
-	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) BUILD_TARGET=dev FRONT_PORT=3000 DEV_VOLUME=./services/Vanilla_FrontEnd docker-compose up --build
+	@echo "🚀 Starting all services in development mode..."
+	@echo "📦 Frontend: http://localhost:3000 (with auto-reload)"
+	@echo "💬 Chat: http://localhost:5002"
+	@echo "🔐 Login: http://localhost:5001"
+	@echo "🔔 Notifications: http://localhost:3001"
+	@echo "👤 Users: http://localhost:3003"
+	@echo "🎮 Matches: http://localhost:3004"
+	@echo ""
+	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) NODE_ENV=development FRONT_PORT=3000 docker-compose up --build
 
+# Start all services (alias for dev)
+up: dev
+
+# Start all services in production mode (detached)
 prod:
-	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) BUILD_TARGET=prod FRONT_PORT=3000 docker-compose up --build --detach
+	@echo "🚀 Starting all services in production mode..."
+	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) NODE_ENV=production FRONT_PORT=3000 docker-compose up --build --detach
+	@echo "✅ All services started in background"
 
+# Stop all services
 down:
+	@echo "🛑 Stopping all services..."
 	docker-compose down
+	@echo "✅ All services stopped"
 
+# View logs
 logs:
 	docker-compose logs -f
+
+# View logs for specific service
+logs-%:
+	docker-compose logs -f $*
+
+# Restart all services
+restart: down dev
+
+# Show status of all containers
+status:
+	@echo "📊 Container status:"
+	@docker-compose ps
 	
 rm:
+	@echo "🗑️  Removing services directory..."
 	rm -rf services
+	@echo "✅ Services directory removed"
 
 clone:
+	@echo "📥 Cloning all repositories..."
 	@mkdir -p services
 	@for repo in $(REPOS); do \
 		if [ ! -d "services/$$repo" ]; then \
@@ -51,23 +93,44 @@ clone:
 				Login_BackEnd) BRANCH=dev ;; \
 				*) BRANCH=main ;; \
 			esac; \
-			echo "Clonando $$repo desde rama $$BRANCH..."; \
+			echo "📦 Clonando $$repo desde rama $$BRANCH..."; \
 			git clone --branch $$BRANCH --single-branch $(BASE_URL)/$$repo.git services/$$repo; \
 		else \
-			echo "$$repo ya existe, omitiendo..."; \
+			echo "⏭️  $$repo ya existe, omitiendo..."; \
 		fi \
 	done
-
+	@echo "✅ All repositories cloned"
 
 pull:
+	@echo "🔄 Updating all repositories..."
 	@for repo in $(REPOS); do \
 		if [ -d "services/$$repo" ]; then \
-			echo "Actualizando $$repo..."; \
+			echo "📦 Actualizando $$repo..."; \
 			cd services/$$repo && git pull && cd -; \
 		else \
-			echo "$$repo no existe, ejecuta 'make clone' primero."; \
+			echo "⚠️  $$repo no existe, ejecuta 'make clone' primero."; \
 		fi \
 	done
+	@echo "✅ All repositories updated"
 
+# Clean database files
 clean-db:
+	@echo "🗑️  Cleaning database files..."
 	find . -type f -name '*.db' -exec rm -f {} +
+	@echo "✅ Database files cleaned"
+
+# Clean Docker volumes
+clean-volumes:
+	@echo "🗑️  Cleaning Docker volumes..."
+	docker volume rm $$(docker volume ls -q) 2>/dev/null || true
+	@echo "✅ Docker volumes cleaned"
+
+# Full clean: stop containers, remove volumes, clean databases
+clean: down clean-db clean-volumes
+	@echo "🧹 Full cleanup completed"
+
+# Remove all containers, images, and volumes (nuclear option)
+fclean: down
+	@echo "💣 Nuclear cleanup: removing all Docker artifacts..."
+	docker-compose down -v --rmi all --remove-orphans
+	@echo "✅ All Docker artifacts removed"
