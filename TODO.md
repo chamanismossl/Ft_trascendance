@@ -47,12 +47,14 @@
 - **1.3.** Implementar UI para mostrar jugadores en espera en el lobby
 
 ### 2. Sistema de Chat con Usuarios Bloqueados
-- **2.1.** Verificar filtrado correcto de mensajes de usuarios bloqueados en todas las situaciones
-- **2.2.** Testear actualización de lista de contactos al bloquear/desbloquear
-- **2.3.** Verificar que usuarios bloqueados no puedan enviar invitaciones
+- ~~**2.1.** Verificar filtrado correcto de mensajes de usuarios bloqueados en todas las situaciones~~
+- ~~**2.2.** Testear actualización de lista de contactos al bloquear/desbloquear~~
+- ~~**2.3.** Verificar que usuarios bloqueados no puedan enviar invitaciones~~
+- **NOTA:** La lógica de bloqueos debe implementarse desde el backend (Retornar status)
 
 ### 3. Sincronización de Datos
 - Hay muchos datos que se ven en distintas partes, que tendrían que ser reactivos y actualizarse en todos los componentes que lo usan
+- **NOTA:** Implementado en bloqueo de usuarios
 
 ### 4. Visualización de Stats y Perfil
 - **4.1.** Conectar historial de matches con backend real (actualmente usa datos mock)
@@ -63,17 +65,17 @@
 - **5.1.** Implementar barra de progreso de experiencia en UI del perfil
 - **5.2.** Calcular y mostrar nivel basado en experiencia
 - **5.3.** Mostrar XP ganada después de cada partida en `RecapScreen`
-- **5.5.** Implementar sistema de recompensas visuales por nivel alcanzado
 
 ### 6. HUD del Juego (In-Game Interface)
-- **6.1.** Diseñar e implementar HUD overlay durante partida:
-  - Mostrar puntuación en tiempo real de cada jugador
-  - Mostrar nombres de jugadores con sus avatares
+- ~~**6.1.** Diseñar e implementar HUD overlay durante partida:~~
+  - ~~Mostrar puntuación en tiempo real de cada jugador~~
+  - ~~Mostrar nombres de jugadores con sus avatares~~
+  - **NOTA:** Falta sincronizar backend para tener fotos
 
-- **6.2.** Mejorar `RecapScreen` con más detalles:
-  - Stats detalladas de la partida
-  - XP ganada
-  - Cambios en el ranking/nivel
+- ~~**6.2.** Mejorar `RecapScreen` con más detalles:~~
+  - ~~Stats detalladas de la partida~~
+  - ~~XP ganada~~
+  - **NOTA:** Falta saber que stats vamos a poner
 
 ### 7. Comunicación WebSockets del Juego
 - **7.1.** Implementar captura de resultados completos del juego Babylon.js

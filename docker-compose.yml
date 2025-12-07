@@ -73,6 +73,7 @@ services:
       - transcendence
     volumes:
       - ./services/Match_BackEnd/data:/app/data
+      - ./services/Match_BackEnd/src:/app/src
     environment:
       - NODE_ENV=development
     container_name: matches
