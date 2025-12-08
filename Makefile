@@ -28,31 +28,28 @@ else
 endif
 
 # Default target
-all: dev
+all: up
 
 # Build all services
 build:
 	@echo "🔨 Building all services..."
 	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) docker-compose build
 
-# Start all services in development mode with auto-reload
-dev:
-	@echo "🚀 Starting all services in development mode..."
-	@echo "📦 Frontend: http://localhost:3000 (with auto-reload)"
+# Start all services
+up:
+	@echo "🚀 Starting all services..."
+	@echo "📦 Frontend: http://localhost:3000"
 	@echo "💬 Chat: http://localhost:5002"
 	@echo "🔐 Login: http://localhost:5001"
 	@echo "🔔 Notifications: http://localhost:3001"
 	@echo "👤 Users: http://localhost:3003"
 	@echo "🎮 Matches: http://localhost:3004"
 	@echo ""
-	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) NODE_ENV=development FRONT_PORT=3000 docker-compose up --build
-
-# Start all services (alias for dev)
-up: dev
+	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) FRONT_PORT=3000 docker-compose up --build
 
 # Start all services in production mode (detached)
 prod:
-	@echo "🚀 Starting all services in production mode..."
+	@echo "🚀 Starting all services in production mode (detached)..."
 	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) NODE_ENV=production FRONT_PORT=3000 docker-compose up --build --detach
 	@echo "✅ All services started in background"
 
@@ -71,7 +68,7 @@ logs-%:
 	docker-compose logs -f $*
 
 # Restart all services
-restart: down dev
+restart: down up
 
 # Show status of all containers
 status:
