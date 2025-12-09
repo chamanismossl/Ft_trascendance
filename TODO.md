@@ -113,3 +113,4 @@
 - ~~**13.3.** 2FA no muestra el estado real de la base de datos~~
 - ~~**13.4.** Preview chats no carga siempre los mensajes (?)~~
 - **13.5.** Las alertas de notis de FriendRequest no se muestran, pero las de MSG si (?)
+- **13.6.** Cuando presionamos enter en la ventana de 2FA la recarga (Gallego)
