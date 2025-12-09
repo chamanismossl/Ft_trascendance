@@ -40,7 +40,7 @@
 ### 11. Known Bugs
 - **11.1.** Añadir que los mensajes de alguien que tengo bloqueado se guarden en BBDD con su respectivo status (filtrar cuando se envian)
 - **11.2.** Arreglar pete cuando la persona a la que se invita acepta una invitacion de game privada
-
+- **11.3.** Cuando el 2fa esta activado, el login no funciona
 ---
 
 ##  FRONTEND
@@ -94,13 +94,11 @@
 ### 9. Testear todas las funcionalidades
 
 ### 11. Diseño y UI/UX
-- **11.1.** Revisar consistencia del pixel-art style en toda la app
+- **11.1.** Revisar consistencia del pixel-art style en toda la app (Gallego)
 - **11.2.** Optimizar responsive design (especialmente modales de juego)
 - **11.3.** Mejorar animaciones de transición entre screens
-- **11.4.** Añadir más feedback visual:
-  - Loading states con skeleton screens
-  - Success/error messages con animaciones
-  - Tooltips informativos
+- **11.4.** Reemplazar todos los emojis por iconos .png o .svg (Gallego)
+- **11.5.** Reemplazar todos las alertas (las importates) por modales pixelbox (Gallego)
 
 ### 12. Limpieza de código
 - **12.1.** Eliminar console.logs innecesarios
@@ -111,7 +109,7 @@
 
 ### 13. Known Bugs
 - **13.1.** Las alertas de notis no son interactivas (no son clickables)
-- **13.2.** Cuando tienes a alguien bloqueado, alerta de notis sigue entrando
-- **13.3.** 2FA no se guarda desde settings (?)
-- **13.4.** Preview chats no carga siempre los mensajes (?)
-
+- **13.2.** Cuando tienes a alguien bloqueado, alerta de notis sigue entrando (Posiblemente sea de backend)
+- ~~**13.3.** 2FA no muestra el estado real de la base de datos~~
+- ~~**13.4.** Preview chats no carga siempre los mensajes (?)~~
+- **13.5.** Las alertas de notis de FriendRequest no se muestran, pero las de MSG si (?)
