@@ -19,7 +19,7 @@
 - Probar invitacion de amigo a matches.
 
 ### 5. Revisar sincronizacion de datos entre los backends
-- Login con Chat y Users. Chat con Notificaciones. Users con matches. Macthes con Torneos.
+- ~~Login con Chat y Users. Chat con Notificaciones.~~ Users con matches.
 
 ### 6. Gestion de errores de desconexion en momentos criticos
 - Cuando se empezo un juego, cuando se empezo un torneo. Que se hara?
@@ -34,8 +34,12 @@
 
 ### 10. Limpieza de código
 - **10.1.** Eliminar console.logs innecesarios
-- **10.2.** Traducir todos los comentarios a inglés
-- **10.3.** Añadir comentarios explicativos donde sea necesario
+- **10.2.** Eliminar comentarios innecesarios
+- **10.3.** Traducir todos los logs y respuestas http a inglés
+
+### 11. Known Bugs
+- **11.1.** Añadir que los mensajes de alguien que tengo bloqueado se guarden en BBDD con su respectivo status (filtrar cuando se envian)
+- **11.2.** Arreglar pete cuando la persona a la que se invita acepta una invitacion de game privada
 
 ---
 
@@ -104,3 +108,10 @@
 - **12.3.** Añadir comentarios explicativos donde sea necesario
 - **12.4.** Refactorizar código duplicado
 - **12.5.** Revisar naming conventions y consistencia
+
+### 13. Known Bugs
+- **13.1.** Las alertas de notis no son interactivas (no son clickables)
+- **13.2.** Cuando tienes a alguien bloqueado, alerta de notis sigue entrando
+- **13.3.** 2FA no se guarda desde settings (?)
+- **13.4.** Preview chats no carga siempre los mensajes (?)
+
