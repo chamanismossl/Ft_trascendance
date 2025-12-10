@@ -114,3 +114,4 @@
 - ~~**13.4.** Preview chats no carga siempre los mensajes (?)~~
 - **13.5.** Las alertas de notis de FriendRequest no se muestran, pero las de MSG si (?)
 - **13.6.** Cuando presionamos enter en la ventana de 2FA la recarga (Gallego)
+- 13.7. Se puede navegar dentro de la app (/home, /game) sin iniciar sesion previamente
