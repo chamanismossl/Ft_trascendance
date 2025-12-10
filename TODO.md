@@ -99,7 +99,7 @@
 - **11.3.** Mejorar animaciones de transición entre screens
 - **11.4.** Reemplazar todos los emojis por iconos .png o .svg (Gallego)
 - **11.5.** Reemplazar todos las alertas (las importates) por modales pixelbox (Gallego)
-- **11.6.** Implementar enter en los inputs para ejecutar la funcion correspondiente (Gallego)
+- ~~**11.6.** Implementar enter en los inputs para ejecutar la funcion correspondiente (Gallego)~~
 
 ### 12. Limpieza de código
 - **12.1.** Eliminar console.logs innecesarios
