@@ -99,7 +99,7 @@
 - **11.3.** Mejorar animaciones de transición entre screens
 - **11.4.** Reemplazar todos los emojis por iconos .png o .svg (Gallego)
 - **11.5.** Reemplazar todos las alertas (las importates) por modales pixelbox (Gallego)
-- **11.6.** Implementar enter en los inputs para ejecutar la funcion correspondiente
+- ~~**11.6.** Implementar enter en los inputs para ejecutar la funcion correspondiente (Gallego)~~
 
 ### 12. Limpieza de código
 - **12.1.** Eliminar console.logs innecesarios
@@ -114,6 +114,7 @@
 - ~~**13.3.** 2FA no muestra el estado real de la base de datos~~
 - ~~**13.4.** Preview chats no carga siempre los mensajes (?)~~
 - **13.5.** Las alertas de notis de FriendRequest no se muestran, pero las de MSG si (?)
-- **13.6.** Cuando presionamos enter en la ventana de 2FA la recarga (Gallego)
-- **13.7.** Se puede navegar dentro de la app (/home, /game) sin iniciar sesion previamente (Cookie no se borra bien ?)
-- **13.8.** El creador de torneos no puede elegir un Alias
+- ~~**13.6.** Cuando presionamos enter en la ventana de 2FA la recarga (Gallego)~~
+- **13.7.** Se puede navegar dentro de la app (/home, /game) sin iniciar sesion previamente(Cookie no se borra bien ?)
+- **13.8.** Despues de iniciar sesion con 2FA activo, el campo estaba a FALSE en el perfil (puede ser back o front) (Gallego)
+- **13.9.** El creador de torneos no puede elegir un Alias
