@@ -1,8 +1,19 @@
-.PHONY: all build up dev prod down logs restart clean clean-db clean-volumes clone pull status help
+.PHONY: all build up dev prod down logs restart clean clean-db clean-volumes clone pull stash status help
 
 REPOS = Chat_BackEnd Vanilla_FrontEnd Login_BackEnd Notification_BackEnd User_BackEnd Match_BackEnd
 
 BASE_URL = git@github.com:chamanismossl
+
+# Auto-detect local IP address (works on macOS and Linux)
+ifndef LOCALIP
+  DETECTED_IP := $(shell ifconfig 2>/dev/null | grep 'inet ' | grep -v '127.0.0.1' | head -n 1 | awk '{print $$2}')
+  ifneq ($(DETECTED_IP),)
+    LOCALIP := $(DETECTED_IP)
+  else
+    LOCALIP := localhost
+  endif
+endif
+export LOCALIP
 
 # Detect architecture and set DOCKER_DEFAULT_PLATFORM so builds target the host arch
 UNAME_S := $(shell uname -s)
@@ -45,7 +56,8 @@ up:
 	@echo "👤 Users: http://localhost:3003"
 	@echo "🎮 Matches: http://localhost:3004"
 	@echo ""
-	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) FRONT_PORT=3000 docker-compose up --build
+	DOCKER_DEFAULT_PLATFORM=$(DOCKER_PLATFORM) FRONT_PORT=3000 docker-compose up --build -d
+	@echo "✅ Services started in detached mode. Use 'make logs' to view output."
 
 # Start all services in production mode (detached)
 prod:
@@ -109,6 +121,18 @@ pull:
 		fi \
 	done
 	@echo "✅ All repositories updated"
+
+stash:
+	@echo "💾 Stashing changes in all repositories..."
+	@for repo in $(REPOS); do \
+		if [ -d "services/$$repo" ]; then \
+			echo "📦 Stashing $$repo..."; \
+			cd services/$$repo && git stash && cd -; \
+		else \
+			echo "⚠️  $$repo no existe, omitiendo..."; \
+		fi \
+	done
+	@echo "✅ All repositories stashed"
 
 # Clean database files
 clean-db:
