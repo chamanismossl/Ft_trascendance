@@ -20,8 +20,11 @@ services:
       - transcendence
     volumes:
       - ./services/Login_BackEnd:/node
+      - ./services/Login_BackEnd/data:/node/src/data
       - login_node_modules:/node/node_modules
     container_name: login
+    environment:
+      - LOCALIP=${LOCALIP:-localhost}
 
   front:
     build:
@@ -38,6 +41,8 @@ services:
       - notifications
       - users
       - matches
+    environment:
+      - LOCALIP=${LOCALIP:-localhost}
     networks:
       - transcendence
 
