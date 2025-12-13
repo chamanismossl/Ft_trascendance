@@ -42,6 +42,8 @@
 - **11.2.** Arreglar pete cuando la persona a la que se invita acepta una invitacion de game privada
 - ~~**11.3.** Cuando el 2fa esta activado, el login no funciona~~
 ---
+- **11.4.** Revisar si hay que implementar que el usuario pueda borrar su cuenta
+- **11.5.** Quitar todas las API-KEYS hardcodeadas
 
 ##  FRONTEND
 
