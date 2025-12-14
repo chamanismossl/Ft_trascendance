@@ -16,13 +16,14 @@
 - **3.5.** Implementar notificaciones de torneo en back de notis. se avisara que el torneo empezo? o tambien se avisara por ese back el proximo juego?
 
 ### 4. Arreglar gestion de lobbies de matches
-- Probar invitacion de amigo a matches.
+- ~~Probar invitacion de amigo a matches.~~ Se arreglo, falta probar.
 
 ### 5. Revisar sincronizacion de datos entre los backends
 - ~~Login con Chat y Users. Chat con Notificaciones.~~ Users con matches.
 
 ### 6. Gestion de errores de desconexion en momentos criticos
-- Cuando se empezo un juego, cuando se empezo un torneo. Que se hara?
+- Cuando se empezo un juego.
+- cuando se empezo un torneo.
 
 ### 7. SINCRONIZACION: JUEGO + BACK + FRONT
 - Matches genera el juego y se lo pasa al front, el front se lo pasa al juego. EL juego se desarrolla y al terminar manda los datos al front que los forwardea al back para guardar resultados y generar stats.
@@ -39,7 +40,7 @@
 
 ### 11. Known Bugs
 - **11.1.** Añadir que los mensajes de alguien que tengo bloqueado se guarden en BBDD con su respectivo status (filtrar cuando se envian)
-- **11.2.** Arreglar pete cuando la persona a la que se invita acepta una invitacion de game privada
+- **11.2.** ~~Arreglar pete cuando la persona a la que se invita acepta una invitacion de game privada~~
 - ~~**11.3.** Cuando el 2fa esta activado, el login no funciona~~
 ---
 - **11.4.** Revisar si hay que implementar que el usuario pueda borrar su cuenta
@@ -51,6 +52,7 @@
 - **1.1.** Arreglar flujo inconsistente de "Host game" + "Join game"
 - **1.2.** Mejorar feedback visual del estado del lobby (cantidad de jugadores, estados)
 - **1.3.** Implementar UI para mostrar jugadores en espera en el lobby
+- **1.4.** Cuales seran los rangos en los settings y los valores por defecto? para setearlos en el back
 
 ### 2. Sistema de Chat con Usuarios Bloqueados
 - ~~**2.1.** Verificar filtrado correcto de mensajes de usuarios bloqueados en todas las situaciones~~
@@ -120,3 +122,7 @@
 - **13.7.** Se puede navegar dentro de la app (/home, /game) sin iniciar sesion previamente(Cookie no se borra bien ?)
 - **13.8.** Despues de iniciar sesion con 2FA activo, el campo estaba a FALSE en el perfil (puede ser back o front) (Gallego)
 - **13.9.** El creador de torneos no puede elegir un Alias
+- **13.10.** No es bug, pero es dificil de probar: el front gestiona correctamente cuando recibe el evento del websocket de 1vs1Failed y FFAFailed, desde el back se 
+añadio:       status: "FAILED",
+              message: "Please try again"
+
