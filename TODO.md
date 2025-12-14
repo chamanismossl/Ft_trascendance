@@ -125,4 +125,4 @@
 - **13.10.** No es bug, pero es dificil de probar: el front gestiona correctamente cuando recibe el evento del websocket de 1vs1Failed y FFAFailed, desde el back se 
 añadio:       status: "FAILED",
               message: "Please try again"
-
+- **13.11.** Se cae el servicio de matches en pleno juego/torneo? GESTIONAR
