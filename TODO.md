@@ -49,9 +49,9 @@
 ##  FRONTEND
 
 ### 1. Gestión de Lobbies y Matchmaking
-- **1.1.** Arreglar flujo inconsistente de "Host game" + "Join game"
-- **1.2.** Mejorar feedback visual del estado del lobby (cantidad de jugadores, estados)
-- **1.3.** Implementar UI para mostrar jugadores en espera en el lobby
+- ~~**1.1.** Arreglar flujo inconsistente de "Host game" + "Join game"~~
+- ~~**1.2.** Mejorar feedback visual del estado del lobby (cantidad de jugadores, estados)~~
+- ~~**1.3.** Implementar UI para mostrar jugadores en espera en el lobby~~
 - **1.4.** Cuales seran los rangos en los settings y los valores por defecto? para setearlos en el back
 
 ### 2. Sistema de Chat con Usuarios Bloqueados
