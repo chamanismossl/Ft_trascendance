@@ -1,6 +1,6 @@
 .PHONY: all build up dev prod down logs restart clean clean-db clean-volumes clone pull stash status help
 
-REPOS = Chat_BackEnd Vanilla_FrontEnd Login_BackEnd Notification_BackEnd User_BackEnd Match_BackEnd
+REPOS = Chat_BackEnd Vanilla_FrontEnd Login_BackEnd Notification_BackEnd User_BackEnd Match_BackEnd Game_BackEnd
 
 BASE_URL = git@github.com:chamanismossl
 

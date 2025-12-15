@@ -60,6 +60,22 @@ services:
       - NODE_ENV=development
     container_name: notifications
 
+  game:
+    build: ./services/Game_Backend
+    ports:
+      - "5004:5004"
+      - "5005:5005"
+      - "5006:5006"
+    networks:
+      - transcendence
+    volumes:
+      - ./services/Game_Backend/src:/app/src
+      - ./services/Game_Backend/data:/app/data
+      - game_node_modules:/app/node_modules
+    environment:
+      - NODE_ENV=development
+    container_name: game
+
   users:
     build: ./services/User_BackEnd
     ports:
@@ -97,4 +113,5 @@ volumes:
   login_node_modules:
   front_node_modules:
   notifications_node_modules:
+  game_node_modules:
   users_node_modules:
