@@ -124,3 +124,9 @@
 - ~~**13.9.** El creador de torneos no puede elegir un Alias~~
 - **13.10.** No es bug, pero es dificil de probar: el front gestiona correctamente cuando recibe el evento del websocket de 1vs1Failed y FFAFailed, desde el back se añadio: status: "FAILED", message: "Please try again"
 - **13.11.** Se cae el servicio de matches en pleno juego/torneo? GESTIONAR
+
+### 14. Missing
+- **14.1.** Detect socket desconnection 1v1 the game ends (wins the remaining player), FFA the game continues
+- **14.2.** Invite games is not sync on start
+
+
