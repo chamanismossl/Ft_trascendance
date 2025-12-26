@@ -65,14 +65,14 @@
 - **NOTA:** Implementado en bloqueo de usuarios
 
 ### 4. Visualización de Stats y Perfil
-- **4.1.** Conectar historial de matches con backend real (actualmente usa datos mock)
+- ~~**4.1.** Conectar historial de matches con backend real (actualmente usa datos mock)~~ (El front de momento usa un back de matches modificado)
 - **4.2.** Implementar vista detallada de un match específico (expandir información)
-- **4.3.** Implementar paginación para historial de matches
+- ~~**4.3.** Implementar paginación para historial de matches~~
 
 ### 5. Sistema de Experiencia y Nivel
 - **5.1.** Implementar barra de progreso de experiencia en UI del perfil
 - **5.2.** Calcular y mostrar nivel basado en experiencia
-- **5.3.** Mostrar XP ganada después de cada partida en `RecapScreen`
+- ~~**5.3.** Mostrar XP ganada después de cada partida en `RecapScreen`~~
 
 ### 6. HUD del Juego (In-Game Interface)
 - ~~**6.1.** Diseñar e implementar HUD overlay durante partida:~~
@@ -125,8 +125,10 @@
 - **13.10.** No es bug, pero es dificil de probar: el front gestiona correctamente cuando recibe el evento del websocket de 1vs1Failed y FFAFailed, desde el back se añadio: status: "FAILED", message: "Please try again"
 - **13.11.** Se cae el servicio de matches en pleno juego/torneo? GESTIONAR
 
-### 14. Missing
-- **14.1.** Detect socket desconnection 1v1 the game ends (wins the remaining player), FFA the game continues
-- **14.2.** Invite games is not sync on start
+### 14. Pendiente
+- **14.1.** Detectar desconexión de socket: en 1v1 el juego termina (gana el jugador que queda), en FFA el juego continua
+- **14.2.** Las invitaciones a partidas no están sincronizadas al iniciar
+- **14.3.** Como se gestiona en DB cuando se juega una local ?
+- **14.4.** Falta fixear el backend para los mensajes bloqueados
 
 
