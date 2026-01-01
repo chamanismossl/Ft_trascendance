@@ -71,7 +71,7 @@
 
 ### 5. Sistema de Experiencia y Nivel
 - **5.1.** Implementar barra de progreso de experiencia en UI del perfil
-- **5.2.** Calcular y mostrar nivel basado en experiencia
+- ~~**5.2.** Calcular y mostrar nivel basado en experiencia~~ (Falta guardar en backend)
 - ~~**5.3.** Mostrar XP ganada después de cada partida en `RecapScreen`~~
 
 ### 6. HUD del Juego (In-Game Interface)
@@ -86,9 +86,9 @@
   - **NOTA:** Falta saber que stats vamos a poner
 
 ### 7. Comunicación WebSockets del Juego
-- **7.1.** Implementar captura de resultados completos del juego Babylon.js
+- ~~**7.1.** Implementar captura de resultados completos del juego Babylon.js~~
 - ~~**7.2.** Crear sistema de callback: Juego → Front → Backend~~ (Probado en frontend, falta endpoints oficiales)
-- **7.3.** Enviar stats detalladas de la partida al backend (no solo ganador) (recap screen)
+- ~~**7.3.** Enviar stats detalladas de la partida al backend (no solo ganador) (recap screen)~~
 ### 8. Sistema de Torneos
 - **8.1.** Testear flujo completo de torneo (crear, unirse, jugar, avanzar rondas)
 - **8.2.** Verificar actualización correcta del bracket después de cada match
@@ -121,14 +121,13 @@
 - ~~**13.7.** Se puede navegar dentro de la app (/home, /game) sin iniciar sesion previamente~~ (Solo a game mientras desarrollo)
 - ~~**13.8.** Despues de iniciar sesion con 2FA activo, el campo estaba a FALSE en el perfil (puede ser back o front) (Gallego)~~
 - ~~**13.9.** El creador de torneos no puede elegir un Alias~~
-- **13.10.** No es bug, pero es dificil de probar: el front gestiona correctamente cuando recibe el evento del websocket de 1vs1Failed y FFAFailed, desde el back se añadio: status: "FAILED", message: "Please try again"
-- **13.11.** Se cae el servicio de matches en pleno juego/torneo? GESTIONAR
 
 ### 14. Pendiente
 - **14.1.** Detectar desconexión de socket: en 1v1 el juego termina (gana el jugador que queda), en FFA el juego continua
 - **14.2.** Las invitaciones a partidas no están sincronizadas al iniciar
 - **14.3.** Como se gestiona en DB cuando se juega una local ?
 - **14.4.** Falta fixear el backend para los mensajes bloqueados
-- **14.5.** Recap Screen muestra mismos datos a todos los clientes, el tiempo de partida no es el mismo para todos (?)
+- ~~**14.5.** Recap Screen muestra mismos datos a todos los clientes, el tiempo de partida no es el mismo para todos (?)~~
+- **14.6.** Quies es local y quien es guest en localmatch ? (actualizar hud)
 
 
