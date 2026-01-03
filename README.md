@@ -111,23 +111,30 @@
 - **12.4.** Refactorizar código duplicado
 - **12.5.** Revisar naming conventions y consistencia
 
-### 13. Known Bugs
+### 13. Pendiente
 - ~~**13.1.** Las alertas de notis no son interactivas (no son clickables)~~
 - **13.2.** Cuando tienes a alguien bloqueado, alerta de notis sigue entrando (Posiblemente sea de backend)
 - ~~**13.3.** 2FA no muestra el estado real de la base de datos~~
 - ~~**13.4.** Preview chats no carga siempre los mensajes (?)~~
 - ~~**13.5.** Las alertas de notis de FriendRequest no se muestran, pero las de MSG si (?)~~
 - ~~**13.6.** Cuando presionamos enter en la ventana de 2FA la recarga (Gallego)~~
-- ~~**13.7.** Se puede navegar dentro de la app (/home, /game) sin iniciar sesion previamente~~ (Solo a game mientras desarrollo)
+- ~~**13.7.** Se puede navegar dentro de la app (/home, /game) sin iniciar sesion previamente (Solo a game mientras desarrollo)~~
 - ~~**13.8.** Despues de iniciar sesion con 2FA activo, el campo estaba a FALSE en el perfil (puede ser back o front) (Gallego)~~
 - ~~**13.9.** El creador de torneos no puede elegir un Alias~~
+- **13.10.** Detectar desconexión de socket: en 1v1 el juego termina (gana el jugador que queda), en FFA el juego continua
+- **13.11.** Las invitaciones a partidas no están sincronizadas al iniciar
+- **13.12.** Como se gestiona en DB cuando se juega una local ?
+- **13.13.** Falta fixear el backend para los mensajes bloqueados
+- ~~**13.14.** Recap Screen muestra mismos datos a todos los clientes, el tiempo de partida no es el mismo para todos (?)~~
+- ~~**13.15.** Quies es local y quien es guest en localmatch ? (actualizar hud)~~
+- ~~**13.16.** Se puede navegar a /game sin sesión iniciada o sin un juego válido lanzado~~
 
-### 14. Pendiente
-- **14.1.** Detectar desconexión de socket: en 1v1 el juego termina (gana el jugador que queda), en FFA el juego continua
-- **14.2.** Las invitaciones a partidas no están sincronizadas al iniciar
-- **14.3.** Como se gestiona en DB cuando se juega una local ?
-- **14.4.** Falta fixear el backend para los mensajes bloqueados
-- ~~**14.5.** Recap Screen muestra mismos datos a todos los clientes, el tiempo de partida no es el mismo para todos (?)~~
-- **14.6.** Quies es local y quien es guest en localmatch ? (actualizar hud)
+### 14. Endpoints que necesito
+- **14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches)
+- **14.2** Endpoint para leer la experiencia
+- **14.3** Endpoint para guardar matches
+- **14.4** Endpoint para leer matches ( historial )
+- **14.5** Endpoint para borrar cuenta (?)
+
 
 
