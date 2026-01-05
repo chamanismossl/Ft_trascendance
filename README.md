@@ -52,7 +52,6 @@
 - ~~**1.1.** Arreglar flujo inconsistente de "Host game" + "Join game"~~
 - ~~**1.2.** Mejorar feedback visual del estado del lobby (cantidad de jugadores, estados)~~
 - ~~**1.3.** Implementar UI para mostrar jugadores en espera en el lobby~~
-- **1.4.** Cuales seran los rangos en los settings y los valores por defecto? para setearlos en el back
 
 ### 2. Sistema de Chat con Usuarios Bloqueados
 - ~~**2.1.** Verificar filtrado correcto de mensajes de usuarios bloqueados en todas las situaciones~~
@@ -130,11 +129,12 @@
 - ~~**13.16.** Se puede navegar a /game sin sesión iniciada o sin un juego válido lanzado~~
 
 ### 14. Endpoints que necesito
-- **14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches)
+- ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches)~~ (Endpoint creado, falta implementar en frontEnd) + Falta stats torneo
 - **14.2** Endpoint para leer la experiencia
-- **14.3** Endpoint para guardar matches
-- **14.4** Endpoint para leer matches ( historial )
-- **14.5** Endpoint para borrar cuenta (?)
+- **14.3** Endpoint para guardar la experiencia
+- ~~**14.4** Endpoint para guardar matches~~ (No vamos a enviar aqui la xp)
+- ~~**14.5** Endpoint para leer matches (historial)~~ (Falta mejorar frontEnd)
+- ~~**14.6** Endpoint para borrar cuenta (?)~~ (No se va a crear)
 
 
 
