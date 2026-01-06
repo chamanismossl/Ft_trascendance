@@ -42,9 +42,9 @@
 - **11.1.** Añadir que los mensajes de alguien que tengo bloqueado se guarden en BBDD con su respectivo status (filtrar cuando se envian)
 - **11.2.** ~~Arreglar pete cuando la persona a la que se invita acepta una invitacion de game privada~~
 - ~~**11.3.** Cuando el 2fa esta activado, el login no funciona~~
----
 - **11.4.** Revisar si hay que implementar que el usuario pueda borrar su cuenta
 - **11.5.** Quitar todas las API-KEYS hardcodeadas
+
 
 ##  FRONTEND
 
@@ -57,7 +57,7 @@
 - ~~**2.1.** Verificar filtrado correcto de mensajes de usuarios bloqueados en todas las situaciones~~
 - ~~**2.2.** Testear actualización de lista de contactos al bloquear/desbloquear~~
 - ~~**2.3.** Verificar que usuarios bloqueados no puedan enviar invitaciones~~
-- **NOTA:** La lógica de bloqueos debe implementarse desde el backend (Retornar status)
+- **NOTA:** La lógica de bloqueos debe implementarse desde el backend (kinda working)
 
 ### 3. Sincronización de Datos
 - Hay muchos datos que se ven en distintas partes, que tendrían que ser reactivos y actualizarse en todos los componentes que lo usan
@@ -65,7 +65,7 @@
 
 ### 4. Visualización de Stats y Perfil
 - ~~**4.1.** Conectar historial de matches con backend real (actualmente usa datos mock)~~ (El front de momento usa un back de matches modificado)
-- **4.2.** Implementar vista detallada de un match específico (expandir información)
+- ~~**4.2.** Implementar vista detallada de un match específico~~ ( Es necesario ?)
 - ~~**4.3.** Implementar paginación para historial de matches~~
 
 ### 5. Sistema de Experiencia y Nivel
@@ -82,11 +82,11 @@
 - ~~**6.2.** Mejorar `RecapScreen` con más detalles:~~
   - ~~Stats detalladas de la partida~~
   - ~~XP ganada~~
-  - **NOTA:** Falta saber que stats vamos a poner
+  - ~~**NOTA:** Falta saber que stats vamos a poner~~
 
 ### 7. Comunicación WebSockets del Juego
 - ~~**7.1.** Implementar captura de resultados completos del juego Babylon.js~~
-- ~~**7.2.** Crear sistema de callback: Juego → Front → Backend~~ (Probado en frontend, falta endpoints oficiales)
+- ~~**7.2.** Crear sistema de callback: Juego → Front → Backend~~
 - ~~**7.3.** Enviar stats detalladas de la partida al backend (no solo ganador) (recap screen)~~
 ### 8. Sistema de Torneos
 - **8.1.** Testear flujo completo de torneo (crear, unirse, jugar, avanzar rondas)
@@ -112,7 +112,7 @@
 
 ### 13. Pendiente
 - ~~**13.1.** Las alertas de notis no son interactivas (no son clickables)~~
-- **13.2.** Cuando tienes a alguien bloqueado, alerta de notis sigue entrando (Posiblemente sea de backend)
+- ~~**13.2.** Cuando tienes a alguien bloqueado, alerta de notis sigue entrando (Posiblemente sea de backend)~~ (fixed ?)
 - ~~**13.3.** 2FA no muestra el estado real de la base de datos~~
 - ~~**13.4.** Preview chats no carga siempre los mensajes (?)~~
 - ~~**13.5.** Las alertas de notis de FriendRequest no se muestran, pero las de MSG si (?)~~
@@ -120,22 +120,23 @@
 - ~~**13.7.** Se puede navegar dentro de la app (/home, /game) sin iniciar sesion previamente (Solo a game mientras desarrollo)~~
 - ~~**13.8.** Despues de iniciar sesion con 2FA activo, el campo estaba a FALSE en el perfil (puede ser back o front) (Gallego)~~
 - ~~**13.9.** El creador de torneos no puede elegir un Alias~~
-- **13.10.** Detectar desconexión de socket: en 1v1 el juego termina (gana el jugador que queda), en FFA el juego continua
+- ~~**13.10.** Detectar desconexión de socket: en 1v1 el juego termina (gana el jugador que queda),~~ en FFA el juego continua
 - **13.11.** Las invitaciones a partidas no están sincronizadas al iniciar
-- **13.12.** Como se gestiona en DB cuando se juega una local ?
-- **13.13.** Falta fixear el backend para los mensajes bloqueados
+- ~~**13.12.** Como se gestiona en DB cuando se juega una local ?~~
+- ~~**13.13.** Falta fixear el backend para los mensajes bloqueados~~ (kinda working)
 - ~~**13.14.** Recap Screen muestra mismos datos a todos los clientes, el tiempo de partida no es el mismo para todos (?)~~
 - ~~**13.15.** Quies es local y quien es guest en localmatch ? (actualizar hud)~~
 - ~~**13.16.** Se puede navegar a /game sin sesión iniciada o sin un juego válido lanzado~~
+- **13.17** Tantos de local game no se guardan bien ?
+- **13.18** Las stats no se actualizan correctamente
 
 ### 14. Endpoints que necesito
-- ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches)~~ (Endpoint creado, falta implementar en frontEnd) + Falta stats torneo
+- ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches) (Endpoint creado, falta implementar en frontEnd)~~ + Falta stats torneo
 - **14.2** Endpoint para leer la experiencia
 - **14.3** Endpoint para guardar la experiencia
 - ~~**14.4** Endpoint para guardar matches~~ (No vamos a enviar aqui la xp)
 - ~~**14.5** Endpoint para leer matches (historial) (Falta mejorar frontEnd)~~
 - ~~**14.6** Endpoint para borrar cuenta (?)~~ (No se va a crear)
-- **14.7** Tantos de local game no se guardan bien ?
-- **14.8** Las stats no se actualizan correctamente
+
 
 
