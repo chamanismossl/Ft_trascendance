@@ -3,10 +3,10 @@
 ##  BACKEND
 
 ### 1. Implementar experience
-- Campo en back de users alimentado por matches + torneos
+- ~~Campo en back de users alimentado por matches + torneos~~ 
 
 ### 2. Implementar stats
-- Esta por ver en que back ira esta data, sera procedente de matches y torneos
+- ~~Esta por ver en que back ira esta data, sera procedente de matches y torneos~~
 
 ### 3. Toda la logica de torneos
 - **3.1.** Torneos sera un generador de matches con un endpoint propio en matches que creara los juegos de la ronda de un solo fetch.
@@ -26,7 +26,7 @@
 - cuando se empezo un torneo.
 
 ### 7. SINCRONIZACION: JUEGO + BACK + FRONT
-- Matches genera el juego y se lo pasa al front, el front se lo pasa al juego. EL juego se desarrolla y al terminar manda los datos al front que los forwardea al back para guardar resultados y generar stats.
+- ~~ Matches genera el juego y se lo pasa al front, el front se lo pasa al juego. EL juego se desarrolla y al terminar manda los datos al front que los forwardea al back para guardar resultados y generar stats.~~ 
 
 ### 8. SINCRONIZACION: JUEGO + FRONT + BACK DE MATCHES + BACK DE TORNEOS
 - Una vez creados correctamente los matches e iniciados. torneos es capaz de recibir los resultados y generar la siguiente ronda? Que pasa si uno o mas jugadores de desconectan en este punto?
@@ -39,10 +39,10 @@
 - **10.3.** Traducir todos los logs y respuestas http a inglés
 
 ### 11. Known Bugs
-- **11.1.** Añadir que los mensajes de alguien que tengo bloqueado se guarden en BBDD con su respectivo status (filtrar cuando se envian)
+- **11.1.** ~~Añadir que los mensajes de alguien que tengo bloqueado se guarden en BBDD con su respectivo status (filtrar cuando se envian)~~ 
 - **11.2.** ~~Arreglar pete cuando la persona a la que se invita acepta una invitacion de game privada~~
 - ~~**11.3.** Cuando el 2fa esta activado, el login no funciona~~
-- **11.4.** Revisar si hay que implementar que el usuario pueda borrar su cuenta
+- **11.4.** ~~Revisar si hay que implementar que el usuario pueda borrar su cuenta~~ 
 - **11.5.** Quitar todas las API-KEYS hardcodeadas
 
 
@@ -132,8 +132,8 @@
 
 ### 14. Endpoints que necesito
 - ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches) (Endpoint creado, falta implementar en frontEnd)~~ + Falta stats torneo
-- **14.2** Endpoint para leer la experiencia
-- **14.3** Endpoint para guardar la experiencia
+- ~~ **14.2** Endpoint para leer la experiencia~~ 
+- ~~ **14.3** Endpoint para guardar la experiencia~~ 
 - ~~**14.4** Endpoint para guardar matches~~ (No vamos a enviar aqui la xp)
 - ~~**14.5** Endpoint para leer matches (historial) (Falta mejorar frontEnd)~~
 - ~~**14.6** Endpoint para borrar cuenta (?)~~ (No se va a crear)
