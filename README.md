@@ -19,11 +19,11 @@
 - ~~Probar invitacion de amigo a matches.~~ Se arreglo, falta probar.
 
 ### 5. Revisar sincronizacion de datos entre los backends
-- ~~Login con Chat y Users. Chat con Notificaciones.~~ Users con matches.
+- ~~Login con Chat y Users. Chat con Notificaciones. Users con matches.~~
 
 ### 6. Gestion de errores de desconexion en momentos criticos
-- Cuando se empezo un juego.
-- cuando se empezo un torneo.
+- ~~Cuando se empezo un juego.~~
+- Cuando se empezo un torneo.
 
 ### 7. SINCRONIZACION: JUEGO + BACK + FRONT
 - ~~ Matches genera el juego y se lo pasa al front, el front se lo pasa al juego. EL juego se desarrolla y al terminar manda los datos al front que los forwardea al back para guardar resultados y generar stats.~~ 
@@ -44,6 +44,7 @@
 - ~~**11.3.** Cuando el 2fa esta activado, el login no funciona~~
 - **11.4.** ~~Revisar si hay que implementar que el usuario pueda borrar su cuenta~~ 
 - **11.5.** Quitar todas las API-KEYS hardcodeadas
+- **11.6.** ~~Timer para borrar matches abandonados (scores a 0) cada dos horas~~
 
 
 ##  FRONTEND
