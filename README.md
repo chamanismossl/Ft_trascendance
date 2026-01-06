@@ -133,8 +133,9 @@
 - **14.2** Endpoint para leer la experiencia
 - **14.3** Endpoint para guardar la experiencia
 - ~~**14.4** Endpoint para guardar matches~~ (No vamos a enviar aqui la xp)
-- ~~**14.5** Endpoint para leer matches (historial)~~ (Falta mejorar frontEnd)
+- ~~**14.5** Endpoint para leer matches (historial) (Falta mejorar frontEnd)~~
 - ~~**14.6** Endpoint para borrar cuenta (?)~~ (No se va a crear)
-
+- **14.7** Tantos de local game no se guardan bien ?
+- **14.8** Las stats no se actualizan correctamente
 
 
