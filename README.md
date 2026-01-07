@@ -130,11 +130,15 @@
 - ~~**13.16.** Se puede navegar a /game sin sesión iniciada o sin un juego válido lanzado~~
 - **13.17** Tantos de local game no se guardan bien ?
 - **13.18** Las stats no se actualizan correctamente
+- **13.19** Crear struct de bracket en TournamentContext
+- **13.20** Crear evento socket para Trigerizar game + actualizar bracket(viene con estado de torneo)
+- **13.21** Llamar a match_tournamen/{id}/end en recapScreen_torneo
+- **13.22** Añadir evento tournament alert notis
 
 ### 14. Endpoints que necesito
 - ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches) (Endpoint creado, falta implementar en frontEnd)~~ + Falta stats torneo
-- ~~ **14.2** Endpoint para leer la experiencia~~ 
-- ~~ **14.3** Endpoint para guardar la experiencia~~ 
+- ~~**14.2** Endpoint para leer la experiencia~~ 
+- ~~**14.3** Endpoint para guardar la experiencia~~ 
 - ~~**14.4** Endpoint para guardar matches~~ (No vamos a enviar aqui la xp)
 - ~~**14.5** Endpoint para leer matches (historial) (Falta mejorar frontEnd)~~
 - ~~**14.6** Endpoint para borrar cuenta (?)~~ (No se va a crear)
