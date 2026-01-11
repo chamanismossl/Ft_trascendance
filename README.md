@@ -89,10 +89,11 @@
 - ~~**7.1.** Implementar captura de resultados completos del juego Babylon.js~~
 - ~~**7.2.** Crear sistema de callback: Juego → Front → Backend~~
 - ~~**7.3.** Enviar stats detalladas de la partida al backend (no solo ganador) (recap screen)~~
+
 ### 8. Sistema de Torneos
-- **8.1.** Testear flujo completo de torneo (crear, unirse, jugar, avanzar rondas)
+- ~~**8.1.** Testear flujo completo de torneo (crear, unirse, jugar, avanzar rondas)~~ (Rama torneo)
 - **8.2.** Verificar actualización correcta del bracket después de cada match
-- **8.3.** Implementar notificaciones cuando toque jugar en torneo
+- ~~**8.3.** Implementar notificaciones cuando toque jugar en torneo~~ (Rama torneo)
 
 ### 9. Testear todas las funcionalidades
 
@@ -128,12 +129,12 @@
 - ~~**13.14.** Recap Screen muestra mismos datos a todos los clientes, el tiempo de partida no es el mismo para todos (?)~~
 - ~~**13.15.** Quies es local y quien es guest en localmatch ? (actualizar hud)~~
 - ~~**13.16.** Se puede navegar a /game sin sesión iniciada o sin un juego válido lanzado~~
+
 - **13.17** Tantos de local game no se guardan bien ?
-- **13.18** Las stats no se actualizan correctamente
-- **13.19** Crear struct de bracket en TournamentContext
-- **13.20** Crear evento socket para Trigerizar game + actualizar bracket(viene con estado de torneo)
-- **13.21** Llamar a match_tournamen/{id}/end en recapScreen_torneo
-- **13.22** Añadir evento tournament alert notis
+- ~~**13.18** Las stats no se actualizan correctamente~~
+- ~~**13.19** Crear struct de bracket en TournamentContext~~ (Rama torneo)
+- ~~**13.20** Crear evento socket para Trigerizar game + actualizar bracket(viene con estado de torneo)~~ (Rama torneo)
+- ~~**13.21** Llamar a match_tournamen/{id}/end en recapScreen_torneo~~(Rama torneo)
 
 ### 14. Endpoints que necesito
 - ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches) (Endpoint creado, falta implementar en frontEnd)~~ + Falta stats torneo
