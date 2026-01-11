@@ -106,6 +106,8 @@ services:
       - ./services/Match_BackEnd/src:/app/src
     environment:
       - NODE_ENV=development
+      - SECRET_KEY=${SECRET_KEY:-secret_key}
+      - USER_API_KEY=${USER_API_KEY:-default_key}
     container_name: matches
 
   proxy:
