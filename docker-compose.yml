@@ -105,14 +105,14 @@ services:
     container_name: matches
 
   proxy:
-    build: ./services/Proxy
+    build: ./Proxy
     ports:
       - "443:443"
       - "80:80"
     networks:
       - transcendence
     volumes:
-      - ./services/Proxy/ssl:/etc/nginx/ssl:ro
+      - ./Proxy/ssl:/etc/nginx/ssl:ro
     depends_on:
       - front
       - login
