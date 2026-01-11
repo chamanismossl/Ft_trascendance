@@ -104,6 +104,25 @@ services:
       - NODE_ENV=development
     container_name: matches
 
+  proxy:
+    build: ./services/Proxy
+    ports:
+      - "443:443"
+      - "80:80"
+    networks:
+      - transcendence
+    volumes:
+      - ./services/Proxy/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - front
+      - login
+      - chat
+      - notifications
+      - users
+      - matches
+      - game
+    container_name: proxy
+
 networks:
   transcendence:
     driver: bridge
