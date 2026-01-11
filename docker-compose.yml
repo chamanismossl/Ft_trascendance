@@ -25,6 +25,8 @@ services:
     container_name: login
     environment:
       - LOCALIP=${LOCALIP:-localhost}
+      - USER_API_KEY=${USER_API_KEY:-default_key}
+      - SECRET_KEY=${SECRET_KEY:-secret_key}
 
   front:
     build:
@@ -88,6 +90,8 @@ services:
       - users_node_modules:/app/node_modules
     environment:
       - NODE_ENV=development
+      - USER_API_KEY=${USER_API_KEY:-default_key}
+      - SECRET_KEY=${SECRET_KEY:-secret_key}
     container_name: users
 
   matches:
@@ -111,8 +115,6 @@ services:
       - "80:80"
     networks:
       - transcendence
-    volumes:
-      - ./Proxy/ssl:/etc/nginx/ssl:ro
     depends_on:
       - front
       - login
