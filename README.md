@@ -70,15 +70,15 @@
 - ~~**4.3.** Implementar paginación para historial de matches~~
 
 ### 5. Sistema de Experiencia y Nivel
-- **5.1.** Implementar barra de progreso de experiencia en UI del perfil
-- ~~**5.2.** Calcular y mostrar nivel basado en experiencia~~ (Falta guardar en backend)
+- ~~**5.1.** Implementar barra de progreso de experiencia en UI del perfil~~ (No se implementa)
+- ~~**5.2.** Calcular y mostrar nivel basado en experiencia~~
 - ~~**5.3.** Mostrar XP ganada después de cada partida en `RecapScreen`~~
 
 ### 6. HUD del Juego (In-Game Interface)
 - ~~**6.1.** Diseñar e implementar HUD overlay durante partida:~~
   - ~~Mostrar puntuación en tiempo real de cada jugador~~
   - ~~Mostrar nombres de jugadores con sus avatares~~
-  - **NOTA:** Falta sincronizar backend para tener fotos
+  - ~~**NOTA:** Falta sincronizar backend para tener fotos~~
 
 - ~~**6.2.** Mejorar `RecapScreen` con más detalles:~~
   - ~~Stats detalladas de la partida~~
@@ -91,9 +91,9 @@
 - ~~**7.3.** Enviar stats detalladas de la partida al backend (no solo ganador) (recap screen)~~
 
 ### 8. Sistema de Torneos
-- ~~**8.1.** Testear flujo completo de torneo (crear, unirse, jugar, avanzar rondas)~~ (Rama torneo)
+- ~~**8.1.** Testear flujo completo de torneo (crear, unirse, jugar, avanzar rondas)~~
 - **8.2.** Verificar actualización correcta del bracket después de cada match
-- ~~**8.3.** Implementar notificaciones cuando toque jugar en torneo~~ (Rama torneo)
+- ~~**8.3.** Implementar notificaciones cuando toque jugar en torneo~~
 
 ### 9. Testear todas las funcionalidades
 
@@ -106,11 +106,11 @@
 - ~~**11.6.** Implementar enter en los inputs para ejecutar la funcion correspondiente (Gallego)~~
 
 ### 12. Limpieza de código
-- **12.1.** Eliminar console.logs innecesarios
+- ~~**12.1.** Eliminar console.logs innecesarios~~
 - **12.2.** Traducir todos los comentarios a inglés
 - **12.3.** Añadir comentarios explicativos donde sea necesario
 - **12.4.** Refactorizar código duplicado
-- **12.5.** Revisar naming conventions y consistencia
+- ~~**12.5.** Revisar naming conventions y consistencia~~ (Dudo que se haga :) )
 
 ### 13. Pendiente
 - ~~**13.1.** Las alertas de notis no son interactivas (no son clickables)~~
