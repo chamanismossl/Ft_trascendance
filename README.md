@@ -108,8 +108,8 @@
 ### 12. Limpieza de código
 - ~~**12.1.** Eliminar console.logs innecesarios~~
 - **12.2.** Traducir todos los comentarios a inglés
-- **12.3.** Añadir comentarios explicativos donde sea necesario
-- **12.4.** Refactorizar código duplicado
+- ~~**12.3.** Añadir comentarios explicativos donde sea necesario~~ (Dudo que se haga)
+- ~~**12.4.** Refactorizar código duplicado~~ (Si nos sobra tiempo, spoiler, no)
 - ~~**12.5.** Revisar naming conventions y consistencia~~ (Dudo que se haga :) )
 
 ### 13. Pendiente
@@ -123,7 +123,7 @@
 - ~~**13.8.** Despues de iniciar sesion con 2FA activo, el campo estaba a FALSE en el perfil (puede ser back o front) (Gallego)~~
 - ~~**13.9.** El creador de torneos no puede elegir un Alias~~
 - ~~**13.10.** Detectar desconexión de socket: en 1v1 el juego termina (gana el jugador que queda),~~ en FFA el juego continua
-- **13.11.** Las invitaciones a partidas no están sincronizadas al iniciar
+- ~~**13.11.** Las invitaciones a partidas no están sincronizadas al iniciar~~
 - ~~**13.12.** Como se gestiona en DB cuando se juega una local ?~~
 - ~~**13.13.** Falta fixear el backend para los mensajes bloqueados~~ (kinda working)
 - ~~**13.14.** Recap Screen muestra mismos datos a todos los clientes, el tiempo de partida no es el mismo para todos (?)~~

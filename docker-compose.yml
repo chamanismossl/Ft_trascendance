@@ -3,6 +3,7 @@ version: "3.8"
 services:
   chat:
     build: ./services/Chat_BackEnd
+    restart: unless-stopped
     ports:
       - 5002:5002
     networks:
@@ -14,6 +15,7 @@ services:
 
   login:
     build: ./services/Login_BackEnd
+    restart: unless-stopped
     ports:
       - 5001:5001
     networks:
@@ -31,6 +33,7 @@ services:
   front:
     build:
       context: ./services/Vanilla_FrontEnd
+    restart: unless-stopped
     ports:
       - "${FRONT_PORT:-3000}:${FRONT_PORT:-3000}"
     volumes:
@@ -50,6 +53,7 @@ services:
 
   notifications:
     build: ./services/Notification_BackEnd
+    restart: unless-stopped
     ports:
       - "3001:3001"
       - "3002:3002"
@@ -64,6 +68,7 @@ services:
 
   game:
     build: ./services/Game_BackEnd
+    restart: unless-stopped
     ports:
       - "5004:5004"
       - "5005:5005"
@@ -80,6 +85,7 @@ services:
 
   users:
     build: ./services/User_BackEnd
+    restart: unless-stopped
     ports:
       - "3003:3003"
     networks:
@@ -96,6 +102,7 @@ services:
 
   matches:
     build: ./services/Match_BackEnd
+    restart: unless-stopped
     ports:
       - "3004:3004"
       - "3005:3005"
@@ -112,6 +119,7 @@ services:
 
   proxy:
     build: ./Proxy
+    restart: unless-stopped
     ports:
       - "443:443"
       - "80:80"
