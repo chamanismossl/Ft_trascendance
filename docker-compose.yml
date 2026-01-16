@@ -121,8 +121,8 @@ services:
     build: ./Proxy
     restart: unless-stopped
     ports:
-      - "443:443"
-      - "80:80"
+      - "8443:443"
+      - "8080:80"
     networks:
       - transcendence
     depends_on:
