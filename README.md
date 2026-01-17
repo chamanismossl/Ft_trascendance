@@ -1,3 +1,11 @@
+# ⚠️ Port Change Notice
+
+The proxy service now maps external port 8443 to internal 443 (HTTPS) and 8080 to 80 (HTTP) due to Docker rootless mode restrictions. To access the application:
+
+- Use `https://localhost:8443` for HTTPS
+- Use `http://localhost:8080` for HTTP
+
+Update any client or documentation references accordingly.
 #  LISTA DE TAREAS PENDIENTES
 
 ##  BACKEND
@@ -135,14 +143,19 @@
 - ~~**13.19** Crear struct de bracket en TournamentContext~~ (Rama torneo)
 - ~~**13.20** Crear evento socket para Trigerizar game + actualizar bracket(viene con estado de torneo)~~ (Rama torneo)
 - ~~**13.21** Llamar a match_tournamen/{id}/end en recapScreen_torneo~~(Rama torneo)
+- ~~**13.22** El modal de torneo no esta siempre activo cuando lo tendria que estar (Puede ser el endpoint /myactive)~~
+- **13.23** El bracket de torneo no de actualiza correctamente y a todos los usuarios del torneo (Mikel)
+- ~~**13.24** El componente de historial de matches no tiene estilo para FFA (no muestra todos los usuarios)~~
+- **13.25** En un chat todos los mensajes se cargas y se scrollean
+- **13.26** La fuente krunker no se aplica a todo el game/front (Gallego)
+- ~~**13.27** El endpoint para borrar games de una host cuando eres el host no funciona~~
+- **13.28** Salirse de la cola de matchmaking no funciona (?) (FFA & 1v1)
+- **13.29** FFA loading screen on other players remove 
 
 ### 14. Endpoints que necesito
 - ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches) (Endpoint creado, falta implementar en frontEnd)~~ + Falta stats torneo
-- ~~**14.2** Endpoint para leer la experiencia~~ 
-- ~~**14.3** Endpoint para guardar la experiencia~~ 
+- ~~**14.2** Endpoint para leer la experiencia~~
+- ~~**14.3** Endpoint para guardar la experiencia~~
 - ~~**14.4** Endpoint para guardar matches~~ (No vamos a enviar aqui la xp)
 - ~~**14.5** Endpoint para leer matches (historial) (Falta mejorar frontEnd)~~
 - ~~**14.6** Endpoint para borrar cuenta (?)~~ (No se va a crear)
-
-
-
