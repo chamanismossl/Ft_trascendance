@@ -163,6 +163,7 @@ Update any client or documentation references accordingly.
 - **13.40** Revisar .env (Lo mismo tiene que ir en el docker compose)
 - ~~**13.41** Poder cambiar las pass desde settings (Efrain/Gallego)~~
 - **13.42** CREAR REPOSITORIO FINAL CON TODO PARA ENTREGAR
+- **13.43** Revisar errores random de los sockets (https vs http)
 
 ### 14. Endpoints que necesito
 - ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches) (Endpoint creado, falta implementar en frontEnd)~~ + Falta stats torneo
