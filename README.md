@@ -100,22 +100,22 @@ Update any client or documentation references accordingly.
 
 ### 8. Sistema de Torneos
 - ~~**8.1.** Testear flujo completo de torneo (crear, unirse, jugar, avanzar rondas)~~
-- **8.2.** Verificar actualización correcta del bracket después de cada match
+- ~~**8.2.** Verificar actualización correcta del bracket después de cada match~~ (kinda working)
 - ~~**8.3.** Implementar notificaciones cuando toque jugar en torneo~~
 
 ### 9. Testear todas las funcionalidades
 
 ### 11. Diseño y UI/UX
-- **11.1.** Revisar consistencia del pixel-art style en toda la app (Gallego)
-- **11.2.** Optimizar responsive design (especialmente modales de juego)
-- **11.3.** Mejorar animaciones de transición entre screens
-- **11.4.** Reemplazar todos los emojis por iconos .png o .svg (Gallego)
+- ~~**11.1.** Revisar consistencia del pixel-art style en toda la app (Gallego)~~
+- ~~**11.2.** Optimizar responsive design (especialmente modales de juego)~~
+- ~~**11.3.** Mejorar animaciones de transición entre screens~~
+- ~~**11.4.** Reemplazar todos los emojis por iconos .png o .svg (Gallego) (Movido a pendiente)~~
 - ~~**11.5.** Reemplazar todos las alertas (las importates) por modales pixelbox (Gallego)~~
 - ~~**11.6.** Implementar enter en los inputs para ejecutar la funcion correspondiente (Gallego)~~
 
 ### 12. Limpieza de código
 - ~~**12.1.** Eliminar console.logs innecesarios~~
-- **12.2.** Traducir todos los comentarios a inglés
+- **12.2.** Traducir todos los comentarios a inglés (Se pueden borrar tmb)
 - ~~**12.3.** Añadir comentarios explicativos donde sea necesario~~ (Dudo que se haga)
 - ~~**12.4.** Refactorizar código duplicado~~ (Si nos sobra tiempo, spoiler, no)
 - ~~**12.5.** Revisar naming conventions y consistencia~~ (Dudo que se haga :) )
@@ -137,8 +137,7 @@ Update any client or documentation references accordingly.
 - ~~**13.14.** Recap Screen muestra mismos datos a todos los clientes, el tiempo de partida no es el mismo para todos (?)~~
 - ~~**13.15.** Quies es local y quien es guest en localmatch ? (actualizar hud)~~
 - ~~**13.16.** Se puede navegar a /game sin sesión iniciada o sin un juego válido lanzado~~
-
-- **13.17** Tantos de local game no se guardan bien ?
+- ~~**13.17** Tantos de local game no se guardan bien ?~~
 - ~~**13.18** Las stats no se actualizan correctamente~~
 - ~~**13.19** Crear struct de bracket en TournamentContext~~ (Rama torneo)
 - ~~**13.20** Crear evento socket para Trigerizar game + actualizar bracket(viene con estado de torneo)~~ (Rama torneo)
@@ -146,14 +145,23 @@ Update any client or documentation references accordingly.
 - ~~**13.22** El modal de torneo no esta siempre activo cuando lo tendria que estar (Puede ser el endpoint /myactive)~~
 - ~~**13.23** El bracket de torneo no de actualiza correctamente y a todos los usuarios del torneo~~ (Mikel) (kinda working)
 - ~~**13.24** El componente de historial de matches no tiene estilo para FFA (no muestra todos los usuarios)~~
-- **13.25** En un chat todos los mensajes se cargas y se scrollean
+- **13.25** En un chat todos los mensajes se cargas y se scrollean (optativo)
 - **13.26** La fuente krunker no se aplica a todo el game/front (Gallego)
 - ~~**13.27** El endpoint para borrar games de una host cuando eres el host no funciona~~
-- **13.28** Salirse de la cola de matchmaking no funciona (?) (FFA & 1v1)
-- **13.29** FFA loading screen on other players remove
+- ~~**13.28** Salirse de la cola de matchmaking no funciona (?) (FFA & 1v1)~~
+- **13.29** FFA loading screen on other players remove (optativo, es visual)
 - ~~**13.30** Tournament mockup bracket for future matches~~
 - ~~**13.31** My active tournament data not readed correctly~~
 - **13.32** Alias not working on tournament
+- **13.33** Game settings tendria que usar index, 0 1 y 2
+- **13.34** Implementar stats de torneo (opcional, sino borrar del front)
+- **13.35** El sitio web tiene que estar protegido contra sql injection
+- **13.36** Verificar inputs de usuarios
+- **13.37** Añadir fetcha en el historial de las partidas
+- ~~**13.38** 2FA activado devuelve credenciales incorrectas en el login (Gallego)~~
+- **13.39** Reemplazar todos los emojis por iconos .png o .svg (Gallego)
+- **13.40** Revisar .env (Lo mismo tiene que ir en el docker compose)
+- **13.41** Poder cambiar las pass desde settings (Efrain/Gallego)
 
 ### 14. Endpoints que necesito
 - ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches) (Endpoint creado, falta implementar en frontEnd)~~ + Falta stats torneo
