@@ -144,13 +144,16 @@ Update any client or documentation references accordingly.
 - ~~**13.20** Crear evento socket para Trigerizar game + actualizar bracket(viene con estado de torneo)~~ (Rama torneo)
 - ~~**13.21** Llamar a match_tournamen/{id}/end en recapScreen_torneo~~(Rama torneo)
 - ~~**13.22** El modal de torneo no esta siempre activo cuando lo tendria que estar (Puede ser el endpoint /myactive)~~
-- **13.23** El bracket de torneo no de actualiza correctamente y a todos los usuarios del torneo (Mikel)
+- ~~**13.23** El bracket de torneo no de actualiza correctamente y a todos los usuarios del torneo~~ (Mikel) (kinda working)
 - ~~**13.24** El componente de historial de matches no tiene estilo para FFA (no muestra todos los usuarios)~~
 - **13.25** En un chat todos los mensajes se cargas y se scrollean
 - **13.26** La fuente krunker no se aplica a todo el game/front (Gallego)
 - ~~**13.27** El endpoint para borrar games de una host cuando eres el host no funciona~~
 - **13.28** Salirse de la cola de matchmaking no funciona (?) (FFA & 1v1)
-- **13.29** FFA loading screen on other players remove 
+- **13.29** FFA loading screen on other players remove
+- ~~**13.30** Tournament mockup bracket for future matches~~
+- ~~**13.31** My active tournament data not readed correctly~~
+- **13.32** Alias not working on tournament
 
 ### 14. Endpoints que necesito
 - ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches) (Endpoint creado, falta implementar en frontEnd)~~ + Falta stats torneo
