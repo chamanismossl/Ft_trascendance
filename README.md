@@ -146,7 +146,7 @@ Update any client or documentation references accordingly.
 - ~~**13.23** El bracket de torneo no de actualiza correctamente y a todos los usuarios del torneo~~ (Mikel) (kinda working)
 - ~~**13.24** El componente de historial de matches no tiene estilo para FFA (no muestra todos los usuarios)~~
 - **13.25** En un chat todos los mensajes se cargas y se scrollean (optativo)
-- **13.26** La fuente krunker no se aplica a todo el game/front (Gallego)
+- ~~**13.26** La fuente krunker no se aplica a todo el game/front (Gallego)~~
 - ~~**13.27** El endpoint para borrar games de una host cuando eres el host no funciona~~
 - ~~**13.28** Salirse de la cola de matchmaking no funciona (?) (FFA & 1v1)~~
 - **13.29** FFA loading screen on other players remove (optativo, es visual)
