@@ -153,7 +153,7 @@ Update any client or documentation references accordingly.
 - ~~**13.30** Tournament mockup bracket for future matches~~
 - ~~**13.31** My active tournament data not readed correctly~~
 - **13.32** Alias not working on tournament
-- **13.33** Game settings tendria que usar index, 0 1 y 2
+- ~~**13.33** Game settings tendria que usar index, 0 1 y 2~~
 - **13.34** Implementar stats de torneo (opcional, sino borrar del front)
 - **13.35** El sitio web tiene que estar protegido contra sql injection
 - **13.36** Verificar inputs de usuarios
