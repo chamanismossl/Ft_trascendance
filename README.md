@@ -34,10 +34,10 @@ Update any client or documentation references accordingly.
 - Cuando se empezo un torneo.
 
 ### 7. SINCRONIZACION: JUEGO + BACK + FRONT
-- ~~ Matches genera el juego y se lo pasa al front, el front se lo pasa al juego. EL juego se desarrolla y al terminar manda los datos al front que los forwardea al back para guardar resultados y generar stats.~~ 
+- ~~Matches genera el juego y se lo pasa al front, el front se lo pasa al juego. EL juego se desarrolla y al terminar manda los datos al front que los forwardea al back para guardar resultados y generar stats.~~ 
 
 ### 8. SINCRONIZACION: JUEGO + FRONT + BACK DE MATCHES + BACK DE TORNEOS
-- Una vez creados correctamente los matches e iniciados. torneos es capaz de recibir los resultados y generar la siguiente ronda? Que pasa si uno o mas jugadores de desconectan en este punto?
+- ~~Una vez creados correctamente los matches e iniciados. torneos es capaz de recibir los resultados y generar la siguiente ronda? Que pasa si uno o mas jugadores de desconectan en este punto?~~
 
 ### 9. Testear todas las funcionalidades
 
@@ -51,7 +51,7 @@ Update any client or documentation references accordingly.
 - **11.2.** ~~Arreglar pete cuando la persona a la que se invita acepta una invitacion de game privada~~
 - ~~**11.3.** Cuando el 2fa esta activado, el login no funciona~~
 - **11.4.** ~~Revisar si hay que implementar que el usuario pueda borrar su cuenta~~ 
-- **11.5.** Quitar todas las API-KEYS hardcodeadas
+- ~~**11.5.** Quitar todas las API-KEYS hardcodeadas~~
 - **11.6.** ~~Timer para borrar matches abandonados (scores a 0) cada dos horas~~
 
 
