@@ -34,10 +34,10 @@ Update any client or documentation references accordingly.
 - Cuando se empezo un torneo.
 
 ### 7. SINCRONIZACION: JUEGO + BACK + FRONT
-- ~~ Matches genera el juego y se lo pasa al front, el front se lo pasa al juego. EL juego se desarrolla y al terminar manda los datos al front que los forwardea al back para guardar resultados y generar stats.~~ 
+- ~~Matches genera el juego y se lo pasa al front, el front se lo pasa al juego. EL juego se desarrolla y al terminar manda los datos al front que los forwardea al back para guardar resultados y generar stats.~~ 
 
 ### 8. SINCRONIZACION: JUEGO + FRONT + BACK DE MATCHES + BACK DE TORNEOS
-- Una vez creados correctamente los matches e iniciados. torneos es capaz de recibir los resultados y generar la siguiente ronda? Que pasa si uno o mas jugadores de desconectan en este punto?
+- ~~Una vez creados correctamente los matches e iniciados. torneos es capaz de recibir los resultados y generar la siguiente ronda? Que pasa si uno o mas jugadores de desconectan en este punto?~~
 
 ### 9. Testear todas las funcionalidades
 
@@ -51,7 +51,7 @@ Update any client or documentation references accordingly.
 - **11.2.** ~~Arreglar pete cuando la persona a la que se invita acepta una invitacion de game privada~~
 - ~~**11.3.** Cuando el 2fa esta activado, el login no funciona~~
 - **11.4.** ~~Revisar si hay que implementar que el usuario pueda borrar su cuenta~~ 
-- **11.5.** Quitar todas las API-KEYS hardcodeadas
+- ~~**11.5.** Quitar todas las API-KEYS hardcodeadas~~
 - **11.6.** ~~Timer para borrar matches abandonados (scores a 0) cada dos horas~~
 
 
@@ -157,11 +157,11 @@ Update any client or documentation references accordingly.
 - **13.34** Implementar stats de torneo (opcional, sino borrar del front)
 - **13.35** El sitio web tiene que estar protegido contra sql injection
 - **13.36** Verificar inputs de usuarios
-- **13.37** Añadir fetcha en el historial de las partidas
+- ~~**13.37** Añadir fetcha en el historial de las partidas~~ 
 - ~~**13.38** 2FA activado devuelve credenciales incorrectas en el login (Gallego)~~
 - **13.39** Reemplazar todos los emojis por iconos .png o .svg (Gallego)
 - **13.40** Revisar .env (Lo mismo tiene que ir en el docker compose)
-- **13.41** Poder cambiar las pass desde settings (Efrain/Gallego)
+- ~~**13.41** Poder cambiar las pass desde settings (Efrain/Gallego)~~
 
 ### 14. Endpoints que necesito
 - ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches) (Endpoint creado, falta implementar en frontEnd)~~ + Falta stats torneo
