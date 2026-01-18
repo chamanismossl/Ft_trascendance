@@ -157,7 +157,7 @@ Update any client or documentation references accordingly.
 - **13.34** Implementar stats de torneo (opcional, sino borrar del front)
 - **13.35** El sitio web tiene que estar protegido contra sql injection
 - **13.36** Verificar inputs de usuarios
-- **13.37** Añadir fetcha en el historial de las partidas
+- ~~**13.37** Añadir fetcha en el historial de las partidas~~ 
 - ~~**13.38** 2FA activado devuelve credenciales incorrectas en el login (Gallego)~~
 - **13.39** Reemplazar todos los emojis por iconos .png o .svg (Gallego)
 - **13.40** Revisar .env (Lo mismo tiene que ir en el docker compose)
