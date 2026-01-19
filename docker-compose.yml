@@ -25,6 +25,8 @@ services:
       - ./services/Login_BackEnd/data:/node/src/data
       - login_node_modules:/node/node_modules
     container_name: login
+    env_file:
+      - .env
     environment:
       - LOCALIP=${LOCALIP:-localhost}
       - USER_API_KEY=${USER_API_KEY:-default_key}
