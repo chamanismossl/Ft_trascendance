@@ -114,8 +114,8 @@ Update any client or documentation references accordingly.
 - ~~**11.6.** Implementar enter en los inputs para ejecutar la funcion correspondiente (Gallego)~~
 
 ### 12. Limpieza de código
-- ~~**12.1.** Eliminar console.logs innecesarios~~
-- **12.2.** Traducir todos los comentarios a inglés (Se pueden borrar tmb)
+- **12.1.** Eliminar console.logs innecesarios
+- ~~**12.2.** Traducir todos los comentarios a inglés (Se pueden borrar tmb)~~ (Rama cleaning)
 - ~~**12.3.** Añadir comentarios explicativos donde sea necesario~~ (Dudo que se haga)
 - ~~**12.4.** Refactorizar código duplicado~~ (Si nos sobra tiempo, spoiler, no)
 - ~~**12.5.** Revisar naming conventions y consistencia~~ (Dudo que se haga :) )
@@ -149,7 +149,7 @@ Update any client or documentation references accordingly.
 - ~~**13.26** La fuente krunker no se aplica a todo el game/front (Gallego)~~
 - ~~**13.27** El endpoint para borrar games de una host cuando eres el host no funciona~~
 - ~~**13.28** Salirse de la cola de matchmaking no funciona (?) (FFA & 1v1)~~
-- **13.29** FFA loading screen on other players remove (optativo, es visual)
+- ~~**13.29** FFA loading screen on other players remove (optativo, es visual)~~
 - ~~**13.30** Tournament mockup bracket for future matches~~
 - ~~**13.31** My active tournament data not readed correctly~~
 - **13.32** Alias not working on tournament
@@ -164,7 +164,8 @@ Update any client or documentation references accordingly.
 - ~~**13.41** Poder cambiar las pass desde settings (Efrain/Gallego)~~
 - **13.42** CREAR REPOSITORIO FINAL CON TODO PARA ENTREGAR
 - **13.43** Revisar errores random de los sockets (https vs http)
-
+- ~~**13.44.** Eliminar console.logs innecesarios FrontEnd~~ (Rama cleaning)
+- ~~**13.45.** Traducir todos los comentarios a inglés FrontEnd (Se pueden borrar tmb)~~ (Rama cleaning)
 ### 14. Endpoints que necesito
 - ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches) (Endpoint creado, falta implementar en frontEnd)~~ + Falta stats torneo
 - ~~**14.2** Endpoint para leer la experiencia~~
