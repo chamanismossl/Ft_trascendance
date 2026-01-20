@@ -152,20 +152,22 @@ Update any client or documentation references accordingly.
 - ~~**13.29** FFA loading screen on other players remove (optativo, es visual)~~
 - ~~**13.30** Tournament mockup bracket for future matches~~
 - ~~**13.31** My active tournament data not readed correctly~~
-- **13.32** Alias not working on tournament
+- ~~**13.32** Alias not working on tournament~~
 - ~~**13.33** Game settings tendria que usar index, 0 1 y 2~~
-- **13.34** Implementar stats de torneo (opcional, sino borrar del front)
+- ~~**13.34** Implementar stats de torneo (opcional, sino borrar del front)~~
 - **13.35** El sitio web tiene que estar protegido contra sql injection
 - **13.36** Verificar inputs de usuarios
 - ~~**13.37** Añadir fetcha en el historial de las partidas~~ 
 - ~~**13.38** 2FA activado devuelve credenciales incorrectas en el login (Gallego)~~
 - **13.39** Reemplazar todos los emojis por iconos .png o .svg (Gallego)
-- **13.40** Revisar .env (Lo mismo tiene que ir en el docker compose)
+- ~~**13.40** Revisar .env (Lo mismo tiene que ir en el docker compose)~~
 - ~~**13.41** Poder cambiar las pass desde settings (Efrain/Gallego)~~
 - **13.42** CREAR REPOSITORIO FINAL CON TODO PARA ENTREGAR
 - **13.43** Revisar errores random de los sockets (https vs http)
 - ~~**13.44.** Eliminar console.logs innecesarios FrontEnd~~ (Rama cleaning)
 - ~~**13.45.** Traducir todos los comentarios a inglés FrontEnd (Se pueden borrar tmb)~~ (Rama cleaning)
+- **13.46.** Durante un torneo hay veces que nos vamos a lista de torneos al terminar un match, si clickamos sobre uno terminado, tenemos la posibilidad de cerrar el modal durante un torneo.
+
 ### 14. Endpoints que necesito
 - ~~**14.1** Endpoint para leer las estadisticas (se necesita en perfil y antes de matches) (Endpoint creado, falta implementar en frontEnd)~~ + Falta stats torneo
 - ~~**14.2** Endpoint para leer la experiencia~~
