@@ -17,11 +17,11 @@ Update any client or documentation references accordingly.
 - ~~Esta por ver en que back ira esta data, sera procedente de matches y torneos~~
 
 ### 3. Toda la logica de torneos
-- **3.1.** Torneos sera un generador de matches con un endpoint propio en matches que creara los juegos de la ronda de un solo fetch.
-- **3.2.** Torneos debera almacenar en memoria el estado del torneo y escribir en base de datos cuando se den ciertos eventos: inicio del torneo, finalizar una ronda entera, finalizar un torneo.
-- **3.3.** La idea es que torneo solo gestione creacion, eliminacion y estado del torneo (asignar jugadores a los matches en cada ronda). Que sea un servicio "tonto"
-- **3.4.** Torneos tendra un matchmaking similar al de matches para emparejar jugadores
-- **3.5.** Implementar notificaciones de torneo en back de notis. se avisara que el torneo empezo? o tambien se avisara por ese back el proximo juego?
+- ~~**3.1.** Torneos sera un generador de matches con un endpoint propio en matches que creara los juegos de la ronda de un solo fetch.~~
+- ~~**3.2.** Torneos debera almacenar en memoria el estado del torneo y escribir en base de datos cuando se den ciertos eventos: inicio del torneo, finalizar una ronda entera, finalizar un torneo.~~
+- ~~**3.3.** La idea es que torneo solo gestione creacion, eliminacion y estado del torneo (asignar jugadores a los matches en cada ronda). Que sea un servicio "tonto"~~
+- ~~**3.4.** Torneos tendra un matchmaking similar al de matches para emparejar jugadores~~
+- ~~**3.5.** Implementar notificaciones de torneo en back de notis. se avisara que el torneo empezo? o tambien se avisara por ese back el proximo juego?~~
 
 ### 4. Arreglar gestion de lobbies de matches
 - ~~Probar invitacion de amigo a matches.~~ Se arreglo, falta probar.
